@@ -180,6 +180,8 @@ section {
         padding: 1rem; 
         overflow: hidden; 
         position: relative;
+        max-width: 100%;
+        box-sizing: border-box;
 }
     
 
@@ -193,6 +195,9 @@ section {
         position: relative; /* Keeps the card within its container */
         transform-origin: center; /* Ensures scaling happens from the center */
         box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+        display: inline-block;
+        width: calc(33.333% - 2rem);
+        vertical-align: top;
 }
 
 .project-card:hover {
