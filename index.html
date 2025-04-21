@@ -42,7 +42,7 @@ html
         </ul>
     </section>
 
-    <section id="projects" style= "overflow: hidden;"></section>>
+    <section id="projects"></section>>
         <h2>Projects</h2>
         <div class="project-card">
             <h3>Project 1</h3>
@@ -177,21 +177,25 @@ nav ul li a:hover {
 }
 
 section {
-    padding: 2rem 1rem;
-    text-align: center;
+        padding: 1rem; 
+        overflow: hidden; 
+        position: relative;
 }
+    
+
 
 .project-card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    margin: 1rem 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    will-change: transform; /* Prevents layout shift */
+        border: 1px solid #ddd;
+        padding: 1rem;
+        margin: 1rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        will-change: transform; /* Prevents layout shift */
+        position: relative; /* Keeps the card within its container */
 }
 
 .project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); /* Scales the card slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
 }
 
 form input, form textarea, form button {
