@@ -192,7 +192,7 @@ section {
         will-change: transform; /* Prevents layout shift */
         position: relative; /* Keeps the card within its container */
         transform-origin: center; /* Ensures scaling happens from the center */
-        contain: layout; /* Isolates the scaling effect to this element */
+        box-sizing: border-box; /* Ensures padding and border are included in the width/height */
 }
 
 .project-card:hover {
