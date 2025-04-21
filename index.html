@@ -193,13 +193,12 @@ section {
 .project-card {
         border: 1px solid #ddd;
         padding: 1rem;
-        margin: 1rem;
+        margin: 0;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         will-change: transform; /* Prevents layout shift */
         position: relative; /* Keeps the card within its container */
         transform-origin: center; /* Ensures scaling happens from the center */
         box-sizing: border-box; /* Ensures padding and border are included in the width/height */
-        display: inline-block;
         width: calc(33.333% - 2rem);
         max-width: 300px; /* Set a max-width for larger screens */
         flex: 1 1 calc(33.333% - 2rem); /* Flex-grow, flex-shrink, and flex-basis */
