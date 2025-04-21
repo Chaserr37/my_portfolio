@@ -46,7 +46,7 @@ html
         <h2>Projects</h2>
         <div class="project-card">
             <h3>Project 1</h3>
-            <p>Given the information.</p>
+            <p>A brief description of the project.</p>
         </div>
         <div class="project-card">
             <h3>Project 2</h3>
@@ -57,6 +57,11 @@ html
             <p>A brief description of the project.</p>
         </div>
     </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <iframe src="resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
+        <p><a href="resume.pdf" download>Download My Resume</a></p>
 
     <section id="contact">
         <h2>Contact</h2>
@@ -80,48 +85,11 @@ html
         </ul>
         <p>&copy; 2023 Chase's Portfolio</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html></div>
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
 
-    header {
-        background-color: #333;
-        color: #fff;
-        padding: 1rem 0;
-        text-align: center;
-    }
-
-    header h1 {
-        margin: 0;
-        font-size: 2rem;
-    }
-
-    nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    nav ul li {
-        display: inline;
-    }
-
-    nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    nav ul li a:hover {
-        text-decoration: underline;
-    }
 </style>
 <header>
     <h1>Chase Rapp's Portfolio</h1>
@@ -177,17 +145,9 @@ nav ul li a:hover {
 }
 
 section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
     padding: 1rem;
-    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    box-sizing: border-box;
-    justify-content: center;
-    border: 2px solid red; /* Debugging border */
+    margin: auto;
 }
 
 
@@ -196,18 +156,23 @@ section {
     border: 1px solid #ddd;
     padding: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    transform-origin: center;
     box-sizing: border-box;
-    flex: 1 1 calc(33.333% - 2rem);
-    max-width: 300px;
-    border: 2px solid blue; /* Debugging border */
+    margin: 0.5rem;
 
 }
 
 .project-card:hover {
     transform: scale(1.02); /* Scales the card slightly */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+
+}
+
+#projects {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 form input, form textarea, form button {
@@ -365,4 +330,12 @@ document.querySelectorAll('.project-card').forEach(card => {
     <h2>Resume</h2>
     <iframe src="resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
     <p><a href="resume.pdf" download>Download My Resume</a></p>
+</section>
+<section id="file-upload">
+    <h2>Upload a File</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">Choose a file to upload:</label>
+        <input type="file" id="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
 </section>
