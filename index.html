@@ -177,28 +177,30 @@ nav ul li a:hover {
 }
 
 section {
-    width: 100%; /* Ensure it spans the full width */
-    max-width: 1200px; /* Optional: Add a max-width for larger screens */
-    margin: 0 auto; /* Center the container */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     padding: 1rem;
-    overflow: hidden; /* Prevent overflow caused by scaling */
-
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
 
 
 .project-card {
-        border: 1px solid #ddd;
-        padding: 1rem;
-        margin: 0;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        will-change: transform; /* Prevents layout shift */
-        position: relative; /* Keeps the card within its container */
-        transform-origin: center; /* Ensures scaling happens from the center */
-        box-sizing: border-box; /* Ensures padding and border are included in the width/height */
-        width: calc(33.333% - 2rem);
-        max-width: 300px; /* Set a max-width for larger screens */
-        flex: 1 1 calc(33.333% - 2rem); /* Flex-grow, flex-shrink, and flex-basis */
+    border: 1px solid #ddd;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    transform-origin: center;
+    box-sizing: border-box;
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: 300px;
+
 }
 
 .project-card:hover {
