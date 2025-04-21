@@ -42,7 +42,7 @@ html
         </ul>
     </section>
 
-    <section id="projects"></section>>
+    <section id="projects">
         <h2>Projects</h2>
         <div class="project-card">
             <h3>Project 1</h3>
@@ -191,6 +191,8 @@ section {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         will-change: transform; /* Prevents layout shift */
         position: relative; /* Keeps the card within its container */
+        transform-origin: center; /* Ensures scaling happens from the center */
+        contain: layout; /* Isolates the scaling effect to this element */
 }
 
 .project-card:hover {
