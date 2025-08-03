@@ -23,12 +23,15 @@ header {
 header h1 {
   margin: 0 0 10px 0;
   font-weight: 700;
+  color: #003366; /* Dark navy blue for better readability */
+  font-size: 2.5rem; /* Larger font size to stand out */
 }
 
 header p {
   margin: 0;
   font-weight: 500;
   font-size: 1.1em;
+  color: white; /* keep subheading white for contrast */
 }
 
 /* Section Styling */
@@ -41,7 +44,7 @@ section {
 }
 
 /* Headings */
-h1, h2 {
+h2 {
   color: #007acc;
   margin-top: 0;
 }
@@ -75,5 +78,8 @@ p {
   }
   header, section {
     padding: 15px;
+  }
+  header h1 {
+    font-size: 2rem;
   }
 }
