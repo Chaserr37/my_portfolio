@@ -1,20 +1,79 @@
-/* Global Reset */
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Global Reset and Base Styles */
 body {
-  background-color: #f0f8ff; /* light blue */
-  color: #333333; /* dark grey text */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9; /* soft off-white */
+  color: #333333; /* dark gray text */
+  font-family: 'Poppins', sans-serif;
   margin: 20px;
+  line-height: 1.6;
 }
 
+/* Header Styling */
+header {
+  background: linear-gradient(135deg, #007acc, #00aaff);
+  color: white;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 122, 204, 0.3);
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+header p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+/* Section Styling */
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Headings */
 h1, h2 {
-  color: #007acc; /* bright blue headers */
+  color: #007acc;
+  margin-top: 0;
 }
 
+/* Lists */
+ul {
+  padding-left: 20px;
+}
+
+/* Links */
 a {
   color: #007acc;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
+  color: #ff6f61;
   text-decoration: underline;
+}
+
+/* Add some spacing to paragraphs */
+p {
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+  header, section {
+    padding: 15px;
+  }
 }
