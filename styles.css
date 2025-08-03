@@ -1,108 +1,20 @@
 /* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body Styling */
 body {
+  background-color: #f0f8ff; /* light blue */
+  color: #333333; /* dark grey text */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fdfcff;
-  color: #333;
-  line-height: 1.6;
-  padding: 30px 10%;
+  margin: 20px;
 }
 
-/* Headers */
 h1, h2 {
-  color: #3b3b98;
-  margin-bottom: 10px;
+  color: #007acc; /* bright blue headers */
 }
 
-h1 {
-  font-size: 2.4rem;
-  margin-bottom: 20px;
-  color: #2f3542;
-}
-
-h2 {
-  font-size: 1.6rem;
-  margin-top: 30px;
-}
-
-/* Paragraphs */
-p {
-  margin-bottom: 15px;
-}
-
-/* Lists */
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-/* Links */
 a {
-  color: #1e90ff;
+  color: #007acc;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #ff6b81;
+  text-decoration: underline;
 }
-
-/* Resume Download Link */
-a[download] {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #1e90ff;
-  color: white;
-  border-radius: 5px;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
-
-a[download]:hover {
-  background-color: #3742fa;
-}
-
-/* Sections */
-section {
-  margin-bottom: 40px;
-  border-bottom: 1px dashed #ddd;
-  padding-bottom: 20px;
-}
-
-/* Header Section */
-header {
-  background-color: #f1f2f6;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 40px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
-  text-align: center;
-}
-
-header p {
-  font-style: italic;
-  color: #57606f;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  body {
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-  }
-}
-
